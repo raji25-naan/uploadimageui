@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+<body>
+    <p style = "color: crimson">&ltscript&gt</p>
+    <p><span style="color: blue;">function</span> <span style="color: darkgreen;">authenticateUser</span> <span style="color: floralwhite;">(</span><span style="color: chocolate;">username,password</span> <span style=" color: floralwhite;">) {</span></p> 
+    <blockquote><span style = "color:aqua;"> <span style="font-style: italic;">var</span> <span style="color:floralwhite;">accounts</span><span style = "color: crimson;">= </span><span style = "color:floralwhite;">apiService.sql (</span></blockquote> 
+        <blockquote><span style="color: darkgoldenrod;"><q>SELECT * FROM USERS</q></span></blockquote>
+        <P><span style="color: floralwhite;"> ) ;</span></P>
+    <P><span style="color: crimson;">for</span> &nbsp<span style="color:floralwhite;">(<span style="color: aqua;"><span style="font-style: italic;">var</span></span> <span style="color:floralwhite;">i</span> &nbsp<span style = "color: crimson;">=</span><span style="color: blueviolet;">0</span><span style="color:floralwhite;">;  i</span> <span style="color: crimson;">&lt</span> <span style="color:floralwhite;">accounts.</span><span style="color:aqua">length</span> <span style="color: floralwhite;">; &nbsp i </span><span style="color:crimson;">++</span> <span style="color: floralwhite;">) {</span></P>    
+        <blockquote><span style="color: aqua;"> <span style="font-style: italic;">var</span></span> <span style="color:floralwhite;">account</span>   <span style = "color: crimson;">=</span>   <span style="color: floralwhite;">accounts[i];</span> </body></blockquote>
+        <blockquote><span style = "color: crimson;">if</span> <span style="color: floralwhite;">(account.username</span>  &nbsp <span style = "color: crimson;">===</span> &nbsp   <span style="color: floralwhite;">username</span>   &nbsp<span style="color: crimson;">&& </span></blockquote>
+            <blockquote><span style="color:floralwhite;">account.password</span>&nbsp<span style = "color:crimson ;">===</span>&nbsp <span style="color: floralwhite;">password)</span></blockquote>
+        <p><span style="color:floralwhite;">{</span></p>
+            <blockquote><span style="color: crimson;">return</span>    <span style="color: darkslateblue;">true</span><span style="color:floralwhite;">;</span></blockquote>
+        <p><span style="color:floralwhite;">}</span></p>
+        <p>}</p>
+        <p><span style="color: crimson;">if</span> <span style="color:floralwhite;">(</span> &nbsp<span style="color: darkgoldenrod;"><q>true</q></span><span style = "color: crimson;">===</span><span style="color: darkgoldenrod;"><q>true</q></span> <span style="color:floralwhite;">)</span>&nbsp <span style="color:floralwhite;">{</span></p> 
+            <blockquote><span style="color: crimson;">return</span>    <span style="color: darkmagenta;">false</span><span style="color:floralwhite;">;</span></blockquote>   
+        <p><span style="color:floralwhite;">}</span></p>
+        <p>
+            <span style="color:floralwhite;">}</span>
+        </p>   
+
+
+</html>

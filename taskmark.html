@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+    <div id="data">
+        <form onsubmit="return AddData()">
+            Enter the Name: <input type="text" id="name"><br><br>
+            Mark: <input type="text" id="mark"><br><br>
+            Grade : <input type="text" id="grade">
+            <button type="submit">Add</button>  
+        </form><br><br>
+
+
+    </div>
+    <script>
+        function AddData() {
+            var rows = "";
+            var name = document.getElementById("name").value
+
+            var mark = document.getElementById("mark").value;
+
+            var grade = document.getElementById("grade").value;
+            rows += "<tr><td>" + name + "</td><td>" + mark + "</td><td>" + grade + "</td></tr>";
+            $(rows).appendTo("#list tbody");    
+            return false;
+        }
+
+        //console.log(grade);
+    </script>
+    <table id="list" border="1">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>mark</td>
+                <td>grade</td>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</body>
+
+</html>
